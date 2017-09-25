@@ -1,0 +1,17 @@
+eureka:
+  client:
+    service-url:
+     defaultZone : http://localhost:8761/eureka
+server:
+  port: 8766
+spring:
+  application:
+    name: client-zuul
+zuul:
+  routes:
+    api-a-x: #随意指定，zuul中唯一即可
+      path: /ribbon/**  #路由前缀
+      service-id: client-ribbon #微服务名称
+    api-b-x:
+      path: /feign/**
+      service-id: client-feign

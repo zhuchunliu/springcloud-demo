@@ -1,0 +1,14 @@
+eureka:
+  client:
+    service-url:
+      defaultZone : http://localhost:8761/eureka
+server:
+  port: 8765
+
+#Feign在新版本中默认是没有开启Hystrix的功能，在此开启
+feign:
+  hystrix:
+    enabled: true
+spring:
+  application:
+    name: client-feign

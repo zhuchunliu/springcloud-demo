@@ -1,0 +1,12 @@
+server:
+  port: 8761 # 注册中心占用8800端口
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: false # 是否将eureka自身作为应用注册到eureka注册中心
+    fetch-registry: false # false来表明自己是一个eureka server
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka
+
+      #其实就是 http://localhost:8888/eureka
