@@ -5,20 +5,17 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
-/**
- * Created by Darren on 2017/9/24.
- */
 @Service
-public class IndexService {
+public class InfoService {
     @Autowired
     private RestTemplate restTemplate;
 
-    @HystrixCommand(fallbackMethod = "errMethod")
-    public String index(){
-        return restTemplate.getForObject("http://eureka-client-demo/index",String.class);
+    @HystrixCommand(fallbackMethod = "errInfo")
+    public String info(){
+        return restTemplate.getForObject("http://eureka-client-demo/info",String.class);
     }
 
-    private String errMethod(){
-        return "errMethod";
+    private String errInfo(){
+        return "errInfo";
     }
 }

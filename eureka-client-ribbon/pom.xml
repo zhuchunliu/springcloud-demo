@@ -26,11 +26,18 @@
             <artifactId>spring-cloud-starter-hystrix</artifactId>
         </dependency>
 
-        <!--断路器：Hystrix 仪表盘-->
+        <!--断路器：Hystrix 仪表盘开始-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-hystrix-dashboard</artifactId>
         </dependency>
+
+        <!--actuator监控中心-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+        <!--断路器：Hystrix 仪表盘结束-->
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
