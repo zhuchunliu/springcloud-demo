@@ -9,6 +9,4 @@ spring:
           search-paths: respo
           default-label: testing
   application:
-    name: config
-  config:
-    name: config-server-xxx
+    name: config-sever

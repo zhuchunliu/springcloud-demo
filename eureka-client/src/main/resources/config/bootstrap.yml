@@ -1,0 +1,3 @@
+spring:
+  application:
+    name: eureka-client-demo  # bootstrap中设置生效
