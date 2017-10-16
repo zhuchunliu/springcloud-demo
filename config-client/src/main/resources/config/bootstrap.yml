@@ -3,6 +3,14 @@ spring:
     name: demo
   cloud:
     config:
-      label: master
-      profile: re
-      uri: http://localhost:8771/
+      label: development
+      profile: te  # 没有profile可以不用设置
+#      uri: http://localhost:8771/
+      discovery:
+        enabled: true
+        service-id: config-server
+
+eureka:
+  client:
+    service-url:
+     defaultZone : http://localhost:8761/eureka
