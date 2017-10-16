@@ -1,10 +1,2 @@
-spring:
-  application:
-    name: config-client
-  cloud:
-    config:
-      label: master
-      profile: dev
-      uri: http://localhost:8771/
 server:
   port: 8772

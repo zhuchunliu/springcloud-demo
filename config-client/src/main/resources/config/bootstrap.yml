@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: demo
+  cloud:
+    config:
+      label: master
+      profile: re
+      uri: http://localhost:8771/
