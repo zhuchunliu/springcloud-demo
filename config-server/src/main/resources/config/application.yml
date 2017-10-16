@@ -5,8 +5,8 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/forezp/SpringcloudConfig/
-          search-paths: respo
-          default-label: testing
+          uri: https://github.com/zhuchunliu/springcloud-demo.git
+          search-paths: config
+#          default-label: master
   application:
     name: config-sever
