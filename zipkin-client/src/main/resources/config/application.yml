@@ -1,0 +1,13 @@
+server:
+  port: 8782
+
+spring:
+  zipkin:
+    base-url: http://localhost:8781
+  application:
+    name: zipkin-client
+
+customer:
+  url: http://localhost:8783/info
+
+

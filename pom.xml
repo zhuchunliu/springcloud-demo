@@ -18,7 +18,8 @@
         <module>config-server</module>
         <module>config-client</module>
         <module>zipkin-server</module>
-        <module>zipkin-customer</module>
+        <module>zipkin-client</module>
+        <module>zipkin-client-child</module>
     </modules>
 
     <parent>
