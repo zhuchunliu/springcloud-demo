@@ -1,23 +1,22 @@
 server:
-  port: 8782
+  port: 8783
 
 spring:
   zipkin:
     base-url: http://localhost:8781
-#    service:
-#      name: zipkin-client #不设置，取spring.application.name值
+    service:
+      name: zipkin-client-child #不设置，取spring.application.name值
     compression:
       enabled: true #发送给zipkin之前进行压缩
     locator:
       discovery:
         enabled: true
   sleuth:
-      sampler:
-        percentage: 1 #修改采集频率
+    sampler:
+      percentage: 1
   application:
-    name: client
+    name: client-child
 
 customer:
-  url: http://localhost:8783/child/info
-
+  url: http://localhost:8782/client/info
 

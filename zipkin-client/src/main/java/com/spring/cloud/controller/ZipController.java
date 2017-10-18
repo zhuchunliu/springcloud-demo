@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
 @RestController
-@RequestMapping
+@RequestMapping("/client")
 public class ZipController {
 
     @Value("${customer.url}")
@@ -17,9 +17,9 @@ public class ZipController {
     private RestTemplate restTemplate;
 
     @RequestMapping("/info")
-    public String info(){
-        System.err.println("info方法被调用了……");
-        return "customer info";
+    public String client_info(){
+        System.err.println("client_info方法被调用了……");
+        return "client_info";
     }
 
     @RequestMapping("/value")
