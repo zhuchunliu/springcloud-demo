@@ -20,6 +20,7 @@
         <module>zipkin-server</module>
         <module>zipkin-client</module>
         <module>zipkin-client-child</module>
+        <module>eureka-turbine</module>
     </modules>
 
     <parent>
